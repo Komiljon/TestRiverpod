@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'home_page.dart';
-
-
+import 'package:testriverpod/sreens/user_screen.dart';
+//import 'sreens/home_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -13,9 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Riverpod',
-      home: MyHomePage(),
-    );
+    return const MaterialApp(title: 'Flutter Riverpod', home: UserScreen());
   }
 }
